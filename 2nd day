@@ -1,0 +1,30 @@
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+from math import cos
+from operator import ne
+
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+
+#Format the result to 2 decimal places = 33.60
+
+#Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
+
+#Write your code below this line 
+
+# Welcome message and cost of the bill
+print('This is the tip calculator.. Feel free to find your share !')
+bill = input('What is the cost of the goods ?')
+print(bill)
+#percentage for the tip
+tip_bill = input('How much is our service tip in percentage?')
+print(tip_bill)
+percen_bill = (int(tip_bill) + 100) / 100
+print(percen_bill)
+# new bill after the tip 
+new_bill = float(percen_bill) * float(bill)
+print(new_bill)
+num_per = input('How many people will share the cost?')
+print(num_per)
+cost_per_person = new_bill / int(num_per)
+print(cost_per_person)
+round(cost_per_person,2)
+print(f'Each person will pay £{cost_per_person}')
