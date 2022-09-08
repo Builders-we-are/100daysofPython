@@ -1,0 +1,52 @@
+from turtle import left
+
+
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+
+print('Welcome to the Naija Island of Treasure')
+name = input('Please enter your name')
+print(f'{name}, you have one goal, which is to retrieve the hidden treasure. \n  As always, {name}, you have some obstacles to overcome.')
+print('Let the game begin. Goodluck')
+
+jungle = input('You are stuck in the jungle, which way would you take to safety? Left or Right').capitalize()
+# jungle_move = jungle.capitalize()
+#lake = input('You have managed to make it to the lake, how will you make it out of here ? Swim or Wait').capitalize()
+# lake_move = lake.capitalize()
+#freak_house = input('Its almost over,to make it to the treasure you have to get past one of the doors, which is it ? Red, Blue, Yellow').capitalize()
+# freak_house_move = freak_house.capitalize()
+
+if jungle == 'Left':
+    lake = input('You have managed to make it to the lake, how will you make it out of here ? Swim or Wait').capitalize()
+    if lake == 'Wait':
+        freak_house = input('Its almost over,to make it to the treasure you have to get past one of the doors, which is it ? Red, Blue, Yellow').capitalize()
+        if freak_house == 'Yellow':
+            print('Congratulations!!!.')
+        elif freak_house == 'Blue':
+            print('End of the Road... You open the door to a loaded trap door')
+        else:
+            print('Too  bad, You were very close but you have been eletrocuted')
+    else:
+        print('So sad to see that you were eaten by hungry crocodiles')
+else:
+    print('Poor fellow, you were served for breakfast by the king of the jungle')
