@@ -25,4 +25,4 @@ email3 = contact_3 + "@devopsgroup.com"
 
 print(f"Welcome {f_name.capitalize()} {l_name.capitalize()} to the DEVOPS group, we are glad you are interested in Programming")
 print(f"for more information, you can contact \n{contact_1} at {email1} \n{contact_2} at {email2} \n{contact_3} at {email3}")
-print(f"Just for fun,   your full name has {len_of_fullname} characters.")
+print(f"Just for fun, your full name has {len_of_fullname} characters.")
