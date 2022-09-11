@@ -5,9 +5,6 @@
 #  reach out to Edoboye, Eloho and Osay for more infor
 #  length of your name for fun
 
-import email
-
-
 print("Congratulations, you are on your way to become a programer!!!")
 f_name = input("Enter your first name: ")
 l_name = input("Enter your last name: ")
