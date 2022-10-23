@@ -30,7 +30,7 @@ if choice1 == "left":
     choice3 = input("dem slap you put you for black mariah. Inside Black mariah Sergeant A says find boys something how much do you give dem: '20', '50', '200'  \n").lower()
     if choice3 == "20":
       print("dem flog you and lock you for cell. Game Over.")
-    elif choice3 == "100":
+    elif choice3 == "50":
       print("dem konk you and lock you for cell. Game Over")
     elif choice3 == "200":
       print("dem Hail you and let you go free")
