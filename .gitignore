@@ -1,10 +1,6 @@
 Wallpapers/
 Wallpapers.zip
 pdf/
-.gitignore
+# .gitignore #need to keep git ignore for version control
 .DS_Store
 
-
-.DS_Store
-.git
-.gitignore
