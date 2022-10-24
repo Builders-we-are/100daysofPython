@@ -21,13 +21,14 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 print("Welcome to Streets of Lagos.")
-print("Your mission is to navigate the streets to you destination.")
+print("Your mission is to navigate the streets to you destination without dying.")
 
 choice1 = input("You enter street. Where do you want to go? Type 'left' or 'right' \n").lower()
 if choice1 == "left":
   choice2 = input("You jam 4 SARS officers. dem ask you for your laptop. Type 'Okay' to give dem. Type 'No' to argue. \n").lower()
+  # .lower() allows your input to be Okay, okay, oKAY, adn so on. 
   if choice2 == "no":
-    choice3 = input("dem slap you put you for black mariah. Inside Black mariah Sergeant A says find boys something how much do you give dem: '20', '50', '200'  \n").lower()
+    choice3 = input("dem slap you put you for black mariah. \n Inside Black mariah Sergeant A says find boys something how much do you give dem: '20', '50', '200'  \n").lower()
     if choice3 == "20":
       print("dem flog you and lock you for cell. Game Over.")
     elif choice3 == "50":
