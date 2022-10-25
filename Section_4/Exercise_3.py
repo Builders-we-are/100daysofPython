@@ -8,13 +8,15 @@ position = input("Where do you want to put the treasure? ")
 # # 🚨 Don't change the code above 👆
 
 # #Write your code below this row 👇
-position = int(position)
-y_axis = int(position % 10)
-# print(f"y_axis is {y_axis}")
+# position = int(position)
 
-x_axis = int((position - y_axis ) / 10)
-# print(f"x_axis is {x_axis}")
-# print(f"y_axis is {y_axis}")
+# use Modulus % at first to get the co-ordinates sep.
+
+# y_axis = int(position % 10)
+# x_axis = int((position - y_axis ) / 10)
+
+x_axis = int(position[0])
+y_axis = int(position[1])
 
 map[y_axis-1][x_axis-1]="X"
 print(f"{row1}\n{row2}\n{row3}")
