@@ -4,7 +4,7 @@
 <details>
   <summary> CLICK TO EXPAND </summary>
 
-| SECTION | PERCENTAGE | DONE |
+| SECTION | PERCENTAGE | 
 | :---: | :---:|
 |1 | 100% |
 |2 | 100% |
