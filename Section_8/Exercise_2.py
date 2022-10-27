@@ -54,3 +54,21 @@ def prime_checker(number):
  
 n = int(input("Check this number: "))
 prime_checker(number=n)
+
+
+# Print all prime numbers under 100, version =================================
+
+import math
+
+for n in range(3,101):
+    really_prime = True
+    for x in range(2,int(n/2)):
+        if n % x == 0:
+            really_prime = False
+    if really_prime == False:
+        pass
+        # print(f"{n} is not a prime number.")
+    else:
+        print(f"{n} is a prime number.")
+            
+   
