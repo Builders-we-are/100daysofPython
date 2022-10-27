@@ -1,8 +1,8 @@
 
-### PROGRESS BAR
+### PROGRESS BAR FOR 100 DAYS OF .PY
 
 <details>
-  <summary> PROGRESS BAR </summary>
+  <summary> CLICK TO EXPAND </summary>
 
 | SECTION | PERCENTAGE |
 | :---: | :---:|
