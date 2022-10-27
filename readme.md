@@ -1,14 +1,11 @@
 
-
 ### PROGRESS BAR
-
 
 <details>
   <summary> PROGRESS BAR </summary>
 
-
 | SECTION | PERCENTAGE |
-| :--- | :---:
+| :---: | :---:|
 |1 | 100% |
 |2 | 100% |
 |3 | 100% |
@@ -22,6 +19,5 @@
 |11 | 0% |
 |12 | 0% |
 |13 | 100% |
-|14 | 0% |
 
 </details>
