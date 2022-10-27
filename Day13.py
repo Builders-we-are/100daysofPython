@@ -42,3 +42,60 @@ def mutate(a_list):
   print(b_list)
 
 mutate([1,2,3,5,8,13])
+
+
+
+
+######## ADVICE TO DEBUGGING ########
+
+
+# 1.Describe the problem
+# 2. Reproduce the bug
+# 3. Play cpu
+# 4. Fix the error
+# 5. Use the print function
+# 6. Use a debugger (pythontutor.com)
+# 7. Take a break 
+# 8. Ask a friend (dev. or just avg. person)
+# 9. Run Often (use loops to iterate code)
+# 10. Stack Overflow
+
+
+
+#####  DEBUGGING ODD/EVEN NUMBER
+number = int(input("Which number do you want to check?"))
+
+if number % 2 == 0:
+  print("This is an even number.")
+else:
+  print("This is an odd number.")
+
+#####  DEBUGGING LEAP YEAR
+
+year = int(input("Which year do you want to check?"))
+
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print("Leap year.")
+    else:
+      print("Not leap year.")
+  else:
+    print("Leap year.")
+else:
+  print("Not leap year.")
+
+
+#####  DEBUGGING FIZZ BUZZ 
+# Debugging with the Print Statement 
+
+for number in range(1, 16):
+  print(f"Currently on number {number}")
+  if number % 3 == 0 or number % 5 == 0:
+    print("FizzBuzz")
+  elif number % 3 == 0:
+    print("Fizz")
+  elif number % 5 == 0:
+    print("Buzz")
+  else:
+    print(number)
