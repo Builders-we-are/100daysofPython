@@ -9,14 +9,14 @@ capitals = {
 
 # Nesting a dictionary in a dictionary 
 
-travel log = {
+travel_log = {
     "France":{ "Cities Visited" : ["Paris","Lille","Dijon"] , "total_visits" : 12},
     "Germany":{ "Cities Visited" : ["Berlin","Hamburg","Stuttgart"], "train ride from berline" : [0,12,4] },
 
 }
 
 # Nesting Dictionary in a List
-travel log = [
+travel_log = [
     { 
         "country" : "France" , 
         "Cities Visited" : ["Paris","Lille","Dijon"] ,
