@@ -10,7 +10,7 @@ capitals = {
 # Nesting a dictionary in a dictionary 
 
 travel log = {
-    "France":{ "Cities Visited" : ["Paris","Lille","Dijon"] , "total_visits" : 12  },
+    "France":{ "Cities Visited" : ["Paris","Lille","Dijon"] , "total_visits" : 12},
     "Germany":{ "Cities Visited" : ["Berlin","Hamburg","Stuttgart"], "train ride from berline" : [0,12,4] },
 
 }
