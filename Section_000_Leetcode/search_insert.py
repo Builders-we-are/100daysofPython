@@ -5,7 +5,7 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-    
+     
 nums = [ 1, 3, 5, 6]
 nums.sort()
 target = int(input("What number are you looking for?"))
