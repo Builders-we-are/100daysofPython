@@ -1,6 +1,5 @@
 
 
-
 logo = """
  _____________________
 |  _________________  |
@@ -39,7 +38,7 @@ operations = { "+" : add,
 }
 
 def calculator():
-    num1 = int(input("What's the first number? :"))
+    num1 = float(input("What's the first number? :"))
 
     # for symbol in operations:
         # print (symbol)
@@ -48,7 +47,7 @@ def calculator():
 
     while should_continue:
         operation_symbol = input("\nPick an operation: ")
-        num2 = int(input("\nWhat's the next number? :"))
+        num2 = float(input("\nWhat's the next number? :"))
         answer = operations[operation_symbol](num1,num2)
 
         print(f"{num1} {operation_symbol} {num2} = {answer} \n")
@@ -61,3 +60,11 @@ def calculator():
         
 
 calculator()
+
+
+
+
+
+
+
+
