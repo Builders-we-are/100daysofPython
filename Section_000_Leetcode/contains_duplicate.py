@@ -3,15 +3,26 @@ import os
 os.system("clear")
 
 nums = [1,2,3,1]
-unique = [] 
-
 Unique = True
+# unique = [] 
 
-for i in nums:
-    if i not in unique:
-        unique.append(i)
-    else:
-        Unique = False
-        break
+# Unique = True
 
-print(f"\n \n \n \n \n \n \n  This list is {Unique}")
+# for i in nums:
+#     if i not in unique:
+#         unique.append(i)
+#     else:
+#         Unique = False
+#         break
+
+# print(f"\n \n \n \n \n \n \n  This list is {Unique}")
+unique = [*set(nums)]
+x = len(unique)
+y = len(nums)
+
+if x < y:
+    Unique = False
+else:
+    Unique = True
+
+return Unique
