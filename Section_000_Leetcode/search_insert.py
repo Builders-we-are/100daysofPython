@@ -22,20 +22,20 @@ elif target > max(nums):
 
 elif target in nums:
         while x < len(nums):
-        if nums[x] != target:
-            x += 1
-        else:
-            print(f"I am here at position number: {x}")
-            break
+            if nums[x] != target:
+                x += 1
+            else:
+                print(f"I am here at position number: {x}")
+                break
 
 else:            
         while x < len(nums):
-        if (nums[x]+nums[x+1])/2 == target:    
-            # No need to convert above to int, tested with bool(int(4.0)=float(4.0)) gave out True
-            print(f"I can be inserted here at position number: {x+1}")
-            break
-        else:
-            x += 1
+            if (nums[x]+nums[x+1])/2 == target:    
+                # No need to convert above to int, tested with bool(int(4.0)=float(4.0)) gave out True
+                print(f"I can be inserted here at position number: {x+1}")
+                break
+            else:
+                x += 1
         
 
 

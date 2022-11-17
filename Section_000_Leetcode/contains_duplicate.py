@@ -16,7 +16,10 @@ Unique = True
 #         break
 
 # print(f"\n \n \n \n \n \n \n  This list is {Unique}")
+
 unique = [*set(nums)]
+# print(set(nums))
+# print(unique)
 x = len(unique)
 y = len(nums)
 
@@ -25,4 +28,4 @@ if x < y:
 else:
     Unique = True
 
-return Unique
+# return Unique
