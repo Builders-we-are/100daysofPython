@@ -1,0 +1,20 @@
+entry is:a b cc 
+sorted entry is: ['a', 'b', 'cc']entry is:1 2 33 
+sorted entry is: ['1', '2', '33']
+ entry is:1 2 3 
+sorted entry is: ['1', '2', '3'] 
+
+ entry is:1
+sorted entry is: ['1']
+
+ entry is:1 2 3 3 
+sorted entry is: ['1', '2', '3', '3']
+
+entry is:5 5 5 5 5 5
+sorted entry is: ['5', '5', '5', '5', '5', '5']
+
+entry is: 5 5 5 55 5 5 55 5 5 
+sorted entry is: ['5', '5', '5', '5', '5', '5', '5', '55', '55']
+
+entry is: 1 4 5 
+sorted entry is: ['1', '4', '5']
