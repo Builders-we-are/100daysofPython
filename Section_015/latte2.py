@@ -7,12 +7,6 @@ def clear():
     os.system("clear")
 
 
-clear()
-
-profit = 0
-is_on = True
-
-
 def is_resource_sufficient(order_ingredients):
     """RETURNS TRUE WHEN INGREDIENTS ARE ENOUGH TO MAKE THE DRINK"""
     resource_check = True
@@ -58,6 +52,11 @@ def make_coffee(drink_name, order_ingredients):
         resources[item] -= order_ingredients[item]
     print(f"\nHere is your {drink_name} ☕️ ")
 
+
+clear()
+
+profit = 0
+is_on = True
 
 while is_on:
     # TODO 1:Print Report
