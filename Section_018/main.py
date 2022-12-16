@@ -22,16 +22,18 @@ tim = Turtle()
 # screen.exitonclick()
 colors = ["red", "blue", "brown", "black", "green", "aquamarine", "coral"]
 
-
-def draw_shape(i):
-    for _ in range(i):
-        tim.forward(100)
-        tim.right(360/i)
+# Draw shapes from triangle to decagon.
 
 
-for _ in range(4, 10):
-    tim.color(random.choice(colors))
-    draw_shape(_)
+# def draw_shape(i):
+#     for _ in range(i):
+#         tim.forward(100)
+#         tim.right(360/i)
+
+
+# for _ in range(3, 10):
+#     tim.color(random.choice(colors))
+#     draw_shape(_)
 
 # print(Screen.canvheight)
 # my_screen.exitonclick()
