@@ -16,6 +16,7 @@ for index, each in enumerate(colors):
     new_turtle.penup()
     new_turtle.goto(x=-230, y=(-120 + index * 50))
     all_turtles.append(new_turtle)
+    pass
 
 
 print(dir(all_turtles))
