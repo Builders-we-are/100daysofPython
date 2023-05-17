@@ -15,7 +15,7 @@ def random_color():
 
 # Drawing a Spirograph
 tim.speed("fastest")
-for _ in range(0, 361, 90):
+for _ in range(0, 361, 1):
     tim.color(random_color())
     tim.circle(100)
     tim.setheading(_)
