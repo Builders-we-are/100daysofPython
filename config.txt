@@ -1,0 +1,11 @@
+npm install cesium express webpack webpack-cli webpack-dev-server
+
+/project-root
+├── src/
+|   ├── index.html
+|   ├── index.js
+├── webpack.config.js
+├── package.json
+├── server.js
+└── czml/
+    └── your.czml
