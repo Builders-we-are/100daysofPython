@@ -1,0 +1,54 @@
+const { MongoClient, GridFSBucket } = require('mongodb');
+const express = require('express');
+const app = express();
+const port = 3000;
+
+const mongoUri = 'mongodb://localhost:27017'; // Replace with your MongoDB connection URI
+const dbName = 'your-database-name'; // Replace with your database name
+
+// Initialize MongoDB client
+const client = new MongoClient(mongoUri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+// Function to retrieve a file by filename
+async function retrieveFileByFilename(filenameToRetrieve) {
+  try {
+    await client.connect();
+    const db = client.db(dbName);
+    const gridFSBucket = new GridFSBucket(db);
+
+    // Find the file by filename
+    const file = await db.collection('fs.files').findOne({ filename: filenameToRetrieve });
+
+    if (!file) {
+      console.error('File not found');
+      return null;
+    }
+
+    // Open a download stream for the file
+    const downloadStream = gridFSBucket.openDownloadStreamByName(filenameToRetrieve);
+    return downloadStream;
+  } catch (error) {
+    console.error('Error retrieving file:', error);
+    return null;
+  }
+}
+
+// Example usage:
+app.get('/download/:filename', async (req, res) => {
+  const filename = req.params.filename;
+  const downloadStream = await retrieveFileByFilename(filename);
+
+  if (downloadStream) {
+    res.setHeader('Content-Disposition', `attachment; filename=${filename}`);
+    downloadStream.pipe(res);
+  } else {
+    res.status(404).send('File not found');
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
