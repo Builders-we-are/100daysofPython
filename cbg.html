@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cesium Viewer with Dropdown</title>
+  <style>
+    /* Style for the dropdown container */
+    .dropdown-container {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1000; /* Ensure the dropdown is above the Cesium viewer */
+    }
+
+    /* Style for the dropdown select element */
+    select {
+      padding: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Dropdown container -->
+  <div class="dropdown-container">
+    <label for="layersDropdown">Select Layer: </label>
+    <select id="layersDropdown">
+      <option value="layer1">Layer 1</option>
+      <option value="layer2">Layer 2</option>
+      <!-- Add more options as needed -->
+    </select>
+  </div>
+
+  <!-- Cesium viewer container -->
+  <div id="cesiumContainer" style="width: 100%; height: 100%;"></div>
+
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.86/Build/Cesium/Cesium.js"></script>
+  <script>
+    // Create a Cesium viewer
+    const viewer = new Cesium.Viewer('cesiumContainer', {
+      terrainProvider: Cesium.createWorldTerrain(),
+    });
+
+    // Add your Cesium layers, entities, or other content here
+
+    // Get a reference to the dropdown element
+    const layersDropdown = document.getElementById('layersDropdown');
+
+    // Event listener to handle dropdown selection change
+    layersDropdown.addEventListener('change', function () {
+      const selectedLayer = layersDropdown.value;
+      // Implement logic to change Cesium content based on selectedLayer
+      // For example, add/remove layers, change imagery, etc.
+      console.log('Selected Layer:', selectedLayer);
+    });
+  </script>
+</body>
+</html>
