@@ -1,7 +1,5 @@
-import pandas as pd
-import math
 import os
-
+import pandas as pd
 os.system("clear")
 
 data = pd.read_csv("Squirrel_Data.csv")
